@@ -26,7 +26,12 @@ const handleUserInput = function(key) {
     break;
   case '\u0003':
     process.exit();
+    break;
+  case 'm':
+    connection.write("Say: Awsome!");
+    break;
   }
+  
 };
 
 module.exports = {setupInput};
